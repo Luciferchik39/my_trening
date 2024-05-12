@@ -1,0 +1,80 @@
+body {
+
+      background: linear-gradient(
+    120deg,
+    red,
+    black,
+    darkblue,
+    green,
+    blue,
+    indigo,
+    violet);
+    background-size: 400% 400%;
+    animation: gradientAnimation 7s ease infinite;
+    border-radius: 10px;
+}
+@keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+aside {
+    background:black;
+    float: left;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+    border-radius: 10px;
+}
+
+aside img {
+    width: 100px;
+    float: left;
+}
+
+aside .logo {
+    color: goldenrod;
+    font-size: 40px;
+    margin-right: 20px;
+    position: relative;
+    top: +15px
+}
+
+aside h3 {
+    color: gold;
+    margin-top: 70px;
+    font-size: 28px;
+}
+
+aside ul {list-style: none;}
+aside ul li {
+    margin-top: 3px;
+    color: cornflowerblue;
+    display: block;
+    transition: transform .10s, ease;
+
+}
+
+aside ul li:hover, aside ul a:hover {
+    margin-top: 3px;
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.10);
+
+
+}
+
+main .features {
+    float: left;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400px; margin: 20px auto;}
+
+
