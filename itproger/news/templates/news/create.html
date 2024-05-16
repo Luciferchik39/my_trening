@@ -1,0 +1,21 @@
+{% extends "main/coppy.html" %}
+
+
+
+{% block title %}Форма добавления статьи
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Форма добавления статьи</h1>
+        <form method="post">
+            <li>{% csrf_token %}</li>
+            <li>{{ form.title }}</li>
+            <li>{{ form.anons }}</li>
+            <li>{{ form.full_text }}</li>
+            <li>{{ form.data_news }}</li>
+            <li><span>{{ error }}</span></li>
+            <li><button class="btn btn-success" type="submit"> Добавить статью</button></li>
+        </form>
+    </div>
+{% endblock %}
