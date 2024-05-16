@@ -1,5 +1,4 @@
 body {
-
       background: linear-gradient(
     120deg,
     red,
@@ -22,12 +21,13 @@ body {
 aside {
     background:black;
     float: left;
-    width: 20%;
-    padding: 2.5%;
+    width: 15%;
+    padding: 1% 1% 2.5% 1%;
     height: 100vh;
     color: #fff;
     border-right: 5px solid #4d4d4d;
     border-radius: 10px;
+
 }
 
 aside img {
@@ -54,6 +54,7 @@ aside ul li {
     margin-top: 3px;
     color: cornflowerblue;
     display: block;
+    /*border-bottom: 0.5px solid darkgoldenrod;*/
     transition: transform .10s, ease;
 
 }
@@ -77,4 +78,24 @@ main .features {
 main .features h1 {font-size: 50px;}
 main .features p {max-width: 400px; margin: 20px auto;}
 
+
+#news_blog {
+    background: darkcyan;
+    width: 400px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    box-shadow: 3px 3px 6px #aaa;
+
+}
+
+form {
+    margin: auto;
+    list-style: none;
+    width: 600px;
+    padding: 8px;
+}
+
+form li {
+    margin-top: 5px;
+}
 

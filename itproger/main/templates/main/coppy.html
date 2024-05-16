@@ -23,10 +23,12 @@
         <span class="logo">abibas</span>
         <h3>Навигация</h3>
         <ul>
-            <a href="{% url 'home'%}"><i class="material-icons">home</i><li> Главная</li></a>
-            <a href="{% url 'about'%}"><i class="material-icons">person</i><li> О себе</li></a>
-            <a href=""><i class="material-icons">contacts</i><li> Контакты</li> </a>
-            <a href="{% url 'news_home'%}"><i class="material-icons">newspaper</i><li> Новости</li> </a>
+            <a href="{% url 'home'%}"><li><i class="material-icons">home</i> Главная</li></a>
+            <a href="{% url 'about'%}"><li><i class="material-icons">person</i> О себе</li></a>
+            <a href="{% url 'news_home'%}"><li><i class="material-icons">newspaper</i> Новости</li></a>
+            <a href=""><li><i class="material-icons">contacts</i> Контакты</li> </a>
+            <a href="{% url 'create'%}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> </button> Добавить новость</li></a>
+
         </ul>
     </aside>
     <main>

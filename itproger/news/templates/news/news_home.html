@@ -1,0 +1,25 @@
+{% extends "main/coppy.html" %}
+
+
+
+{% block title %}Новости
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Тут новости</h1>
+        {% if news %}
+            {% for el in news %}
+                <div id="news_blog">
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.anons }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p> Нет новостей!</p>
+        {% endif %}
+
+        {# Комментарий пишу что хочу для друзей разработчиков  :) ) #}
+
+    </div>
+{% endblock %}
